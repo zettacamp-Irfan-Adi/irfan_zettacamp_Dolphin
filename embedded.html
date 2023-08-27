@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        /* table{
+            display: inline-block;
+        } */
+
+        .table-1 tr:nth-child(2){
+            background-color: green;
+        }
+
+        .movie tr:nth-child(even){
+            background-color: red;
+        }
+        .music tr:nth-child(n+1){
+            background-color: blue;
+        }
+
+       
+
+
+    </style>
+</head>
+<body>
+    <table border="" class="table-1">
+        <caption>Hobby</caption>
+        
+        <tbody>
+            <th>#</th>
+            <th>Hobby</th>
+            <th>Description</th>
+        
+            <tr>
+                <td>1</td>
+                <td>swim</td>
+                <td>to move through water by moving the body or parts of the body</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Football</td>
+                <td>a game played between two teams of eleven people, where each team tries to win by kicking a ball into the other team's goal:</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gaming</td>
+                <td>the activity of playing games on computers and other electronic devices</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="" class="movie">
+        <caption>Favorite Movie</caption>
+        <thead>
+            <th>#</th>
+            <th>Movie</th>
+            <th>Movie Rating</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iron Man 1</td>
+                <td>5/5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>black panther</td>
+                <td>4.9/5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Guardian of The Galaxy</td>
+                <td>4.9/5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="" class="music">
+        <caption>Favorite Music</caption>
+        <thead>
+            <th>#</th>
+            <th>Music</th>
+            <th>Genre</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Get it right</td>
+                <td>EDM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Harley's in Hawaii</td>
+                <td>POP</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Racing in to the night</td>
+                <td>J-POP</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
