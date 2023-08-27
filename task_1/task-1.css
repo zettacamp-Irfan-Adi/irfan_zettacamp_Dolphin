@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    padding: 0;
+}
+
+
+#main-header{
+    background-color: rgba(232, 228, 179, 0.8);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    border-bottom: #F4F2DE 2px solid;
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    z-index: 1;
+    
+    
+}
+
+#main-header h1{
+    font-size: 25px;
+    color: #03ac0e;
+}
+#main-header a{
+   text-decoration: none;
+   color: #353535;
+}
+#main-header a:hover{
+   color: #A1CCD1;
+}
+
+#main-header input{
+    width:  56rem;
+    border-radius: 10px;
+    border: 1px solid #bfc9d9;
+    padding: 1%;
+    height: 2.5rem;
+    outline: none;
+}
+#main-header p{
+    font-size: 25px;
+}
+#main-header button{
+    width: 4rem;
+    border-radius: 10px;
+    border: 1px solid #00aa5b;
+    height: 33px;
+}
+#input:focus{
+    border: #00aa5b 2px solid;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.card{
+    width: 35vh;
+    border: 1px solid #F4F2DE;
+    border-radius: 5%;
+    box-shadow:   2px 9px 24px -2px rgba(0,0,0,0.28);
+    transition: transform .5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 9px 24px -2px rgba(0,0,0,0.16);
+}
+
+.card-head img{
+    border: 1px solid;
+    width: 100%;
+    
+}
+
+.item{
+    color: #F4F2DE;
+    background-color: red;
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    border-radius: 10%;
+}
+
+.item p{
+   text-decoration: underline dotted;
+}
+
+.card-head{
+    height: 35vh;
+}
+.card-body{
+    height: 150px;
+    text-align: start;
+    line-height: 35px;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.mb-1{
+    margin-bottom: 5rem;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 0 auto;
+    gap: 2rem;
+    width:65%;
+
+}
+
+footer{
+    margin: 0;
+    background-color: #F4F2DE;
+    width: 100%;
+    
+
+
+}
+
+.footer-2{
+    gap: 6%;
+    line-height: 4vh;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+
+.test{
+    flex: 5 30%;
+}
+.p-2{
+    padding: 2%;
+}
+
