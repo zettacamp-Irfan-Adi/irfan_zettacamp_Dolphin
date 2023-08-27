@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layout{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.layout-main{
+width: 100%;
+display: flex;
+flex-direction: column;
+/* column-gap: 20%; */
+}
+
+.sidebar{
+    width: 20vw;
+    height: 100%;
+    background-color:#191919 ;
+    display: flex;
+    flex-direction: column;
+    color: #80838c;
+}
+
+.button-aside{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    align-self: center;
+   
+}
+.aside-1{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aside-2{
+    margin-top: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.aside-3{
+    padding: 5%;
+    margin-top: 10%;
+}
+#main-header{
+    background-color: #212123;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    /* position: sticky;
+    top: 0; */
+    padding: 1%;
+    /* z-index: 1; */
+}
+
+#main-header h1{
+    font-size: 25px;
+    color: #9288F8;
+}
+#main-header a{
+   text-decoration: none;
+   color: #8f61daff;
+}
+#main-header a:hover{
+   color: #A1CCD1;
+}
+
+#main-header input{
+    width:  50  rem;
+    border-radius: 10px;
+    border: 1px solid #bfc9d9;
+    padding: 1%;
+    height: 2.5rem;
+    outline: none;
+}
+#main-header p{
+    font-size: 25px;
+}
+#main-header button{
+    width: 4rem;
+    border-radius: 10px;
+    border: 1px solid #00aa5b;
+    height: 33px;
+}
+#input:focus{
+    border: #00aa5b 2px solid;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+}
+
+.container{
+    background-color: #212123;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hero{
+    /* border-radius: 13px; */
+    height: 40vh;
+    width: 70vw;
+    margin: 3% auto 0 auto;
+    display: flex;
+    background-image:url("https://wallpapercave.com/wp/wp10535985.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4%;
+    overflow: visible;
+    
+}
+
+.hero-h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.hero-h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-prod{
+    color: white;
+    display: flex;
+    margin-top: 2%;
+    gap: 5%;
+    padding: 2%;
+}
+
+.nav-prod1{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+}
+
+#active{
+    background-color: #8f61daff;
+    border: none
+}
+
+.main-card{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 40px;
+    padding: 2%;
+}
+
+.card{
+    width: 35vh;
+    border-radius: 5%;
+    box-shadow:   2px 9px 24px -2px rgba(0,0,0,0.28);
+    transition: transform .5s;
+    position: relative;
+    overflow: hidden;
+    background-color: #28282a;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    overflow: visible;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 9px 24px -2px rgba(0,0,0,0.16);
+}
+
+.card-head img{
+    margin-top: -50px;
+}
+
+.card-body button{
+    margin: 10%;
+    width: 50%;
+    height: 4%;
+    border-radius: 20px;
+    color: white;
+    background-color: #8f61daff;
+    font-size: 15px;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+/* add-item */
+.container-add{
+    background-color: #212123;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+  
+}
+
+.img-main{
+    width: 80%;
+ 
+}
+
+
+.img-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10%;
+ 
+}
+
+.img{
+    border: 3px solid #697172;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.detail-item{
+    width: 40%;
+    padding: 5%;
+    line-height: 30px;
+}
+
+.price
+{
+    font-size: larger;
+    color: white;
+    padding: 10%;
+}
+
+.price button{
+    margin-top: 2%;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8f61daff;
+    font-size: 15px;
+    align-self: center
+}
+
+
+
+
+
+/* index */
+.thumbnail{
+    background-image: url("https://wallpapers.com/images/featured/valorant-305kescxw5dpup7y.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.thumbnail h1{
+    font-size: 80px;
+}
+
+.thumbnail button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8f61daff;
+    font-size: 15px;
+    align-self: center;
+}
+
+.main-body-index{
+    width: 100%;
+    height: auto;
+    background-color: #101b21ff 
+}
+
+.desc-2{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    color: white;
+    padding: 5%;
+}
+
+video{
+    border-radius: 20px;
+}
+
+.desc-hero{
+    padding: 5%;
+}
+.desc-hero button{
+    margin: 10%;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8f61daff;
+    font-size: 15px;
+    align-self: center;
+}
+
+.desc-3{
+    color: white;
+    padding: 10%;
+    font-size: 20px;
+    text-align: end;
+}
+
+
+
+footer{
+    margin: 0;
+    background-color:#8f61daff ;
+    width: 100%;
+    color: white;
+    
+
+
+}
+
+.footer-2{
+    gap: 6%;
+    line-height: 4vh;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 3%;
+}
+
+
+
+/* Contact ME */
+form{
+    line-height: 50px;
+}
+
+form button{
+    width: 100px;
+    height: 4%;
+    border-radius: 20px;
+    color: white;
+    background-color: #28282aff;
+    font-size: 15px;
+    align-self: center;
+}
+
+.temp{
+    padding: 5%;
+    margin: 5%;
+    display: inline-block;
+    background-color: #8f61daff;
+    border-radius: 10%;
+    height: 70vh;
+    color: white;
+    width: 50vw;
+    height: 75vh;
+}
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+}
+.container-contact-2{
+    display: flex;
+    flex-direction: row;
+    background-color: #28282aff;
+    height: 92Vh;
+}
+
+
+.img-flex{
+    width: 29.475%;
+    
+}
+
+#first-name{
+    width: 80%;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+#last-name{
+    width: 80%;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+#email{
+    width: 80%;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+#telepon{
+    width: 80%;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+#kolom{
+    width: 80%;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+
+
+/* about me */
+
+.thumbnail-aboutme{
+    width: 100%;
+    height: 50vh;
+    background-image: url("https://cdn.wallpapersafari.com/54/43/UbLfrJ.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: white;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    padding: 2%;
+    justify-content: center;
+}
