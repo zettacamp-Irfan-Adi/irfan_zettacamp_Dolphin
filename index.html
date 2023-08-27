@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #B6EADA;
+        background-color: #03001C;
+    }
+    
+    header ul{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        list-style-type: none;
+        margin-right: 4%;
+    }
+    header li{
+        margin-right: 2%;
+    }
+
+    .main-content{
+        background-color: #301E67;
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: center; */
+        border-radius: 30%;
+        padding-left: 5%;
+
+    }
+
+    article{
+        text-align: center;
+    }
+    .main-content h3{
+        margin-left: 15px;
+        font-size: 70px;
+    }
+    .main-content p{
+        font-size: 60px;
+        margin-right: 400px;
+    }
+    .main-content img{
+        margin-top: -170px;
+    }
+
+    .desc{
+        display: inline-block;
+        width: 300px;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        font-size: 25px;
+    }
+
+    .order{
+        display: inline-block;
+    }
+
+    .pricing{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 4%;
+        
+    }
+
+    .free{
+        border: 1px;
+        border-radius: 13%;
+        border-style: solid;
+        border-color: aliceblue;
+        margin-right:10%;
+        
+    }
+    .free-1{
+        margin-top: -200px;
+        margin-left: 70px;
+    }
+
+    .paid{
+        border: 1px;
+        border-radius: 13%;
+        border-style: solid;
+        border-color: aliceblue;
+    }
+
+    .paid-2{
+        margin-top: -200px;
+        margin-left: 70px; 
+    }
+
+
+</style>
+<body>
+    <header>
+        <ul>
+            <li><h1>Denger!</h1></li>
+            <li><h2>Home</h2></li>
+            <li><h2><a href="/zettacamp/HTML-day 3/HTML/about.html">About</a></h2></li>
+        </ul>
+    </header>
+
+    <div class="main-content">
+            <h3>Denger!</h3>
+            <img src="/zettacamp/HTML-day 3/Assets/img/main-img.png" alt="" width="500">
+            <p>Dengarkan musik dimana saja kapan pun dimana pun</p>
+    </div>
+
+<article>
+    <div class="desc">
+        <h3>Apa itu Denger! ?????</h3>
+        <p>cara menikmati musik tanpa perlu mengunduh file lebih dulu, selain itu aplikasi streaming juga menyediakan perpustakaan lagu, album, dan daftar putar yang sangat beragam.</p>
+        <ol class="order">
+            <li>kumpulan musik yang sangat lengkap</li>
+            <li>tinggal klik dan nikmati dimanapun</li>
+            <li>bisa didengar tanpa internet sekalipun </li>
+        </ol>
+    </div>
+<h3>Pricing :</h3>
+<div class="pricing">
+
+    
+    <div class="free">
+        <img src="/zettacamp/HTML-day 3/Assets/img/cat1.png" alt="" width="400">
+        <table class="free-1">
+            <tr>
+                <td><p>GRATIS</p></td>
+            </tr>
+            <tr>
+                <td><p>Apa yang didapat :</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <ul>
+                            <li>dapat mendengarkan musik</li>
+                            <li>terdapat iklan</li>
+                            <li><del>  dapat mengunduh kapanpun dimanapun</del></li>
+                            <li> <del>memilih lagu sesukanya</del></li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/zettacamp/HTML-day 3/HTML/register.html"><button>Register</button></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="paid">
+        <img src="/zettacamp/HTML-day 3/Assets/img/cat2.png" alt="" width="400">
+        <table class="paid-2">
+            <tr>
+                <td><p>Rp 15.000 per bulan</p></td>
+            </tr>
+            <tr>
+                <td><p>Apa yang didapat :</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <ul>
+                            <li>dapat mendengarkan musik</li>
+                            <li>terdapat iklan</li>
+                            <li>dapat mengunduh kapanpun dimanapun</li>
+                            <li>memilih lagu sesukanya</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/zettacamp/HTML-day 3/HTML/register.html"><button>Register</button></a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</article>
+
+<footer>
+
+</footer>
+
+</body>
+</html>

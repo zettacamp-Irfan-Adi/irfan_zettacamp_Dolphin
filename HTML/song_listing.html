@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #B6EADA;
+        background-color: #03001C;
+    }
+    header ul{
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+        margin-right: 4%;
+    }
+    header li{
+        margin-right: 2%;
+    }
+    .profile{
+        display: flex;
+        margin-bottom: 3%;
+        background-image: url(../Assets/pexels-dmitry-demidov-3784221.jpg);
+        padding: 4%;
+    }
+    .profile1{
+        margin-left: 2%;
+        
+    }
+
+    .name{
+        font-weight: 900;
+        font-size: 30px;
+    }
+    
+    .songs{
+        padding: 3%;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li><h1>Denger!</h1></li>
+            <li><h2><a href="/zettacamp/HTML-day 3/HTML/profile.html">Profile</a></h2></li>
+            <li><h2><a href="/zettacamp/HTML-day 3/HTML/song_listing.html">Song Listing</a></h2></li>
+            <li><h2><a href="/zettacamp/HTML-day 3/HTML/album_preview.html">Album Preview</a></h2></li>
+        </ul>
+    </header>
+    <div class="profile">
+        <img src="../Assets/ab67616d0000b273b6b97294d5be4b363d1755c1-modified.png" alt="" class="irfan" width="200px">
+        <div class="profile1">
+            <p>&#11088; Playlist</p>
+            <p class="name"></p>
+            <p>Public Playlist since 2023</p>
+            <p>1.000.000.000 Monthly Listener</p>
+        </div>
+    </div>
+    <div class="songs">
+
+        <table> 
+            <thead>
+                <th>#</th>
+                <th style="width:70%" colspan="2">Song Title</th>
+                
+                <th style="width:10%">Duration</th>
+                <th>Artist</th>
+            </thead>
+            <tr>
+                <td><img src="../Assets/ab67616d0000b273b6b97294d5be4b363d1755c1-modified.png" alt="" width="70px"></td>
+                <td>babang tamvan</td>
+                <td>  <span><audio src="../Assets/y2mate.com - Kangen Band  Babang Tamvan Official Music Video.mp3" controls></audio></span></td>
+                <td>3:39</td>
+                <td>Kangen Band</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/6e33e90e8b97649a5f4954b8a9f78b14.1000x1000x1-modified.png" alt="" width="70px"></td>
+                <td>KingSlayer </td>
+                <td>
+                    <span><audio src="../Assets/y2mate.com - Bring Me The Horizon  Kingslayer Lyric Video ft BABYMETAL.mp3" controls></audio></span>
+                </td>
+                <td>4:39</td>
+                <td>Bring Me The Horizon</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/maxresdefault-modified.png" alt="" width="70px"></td>
+                <td>OtonaBlue </td>
+                <td>  <span><audio src="../Assets/y2mate.com - Kangen Band  Babang Tamvan Official Music Video.mp3" controls></audio></span></td>
+                <td>4:19</td>
+                <td>Atarashii gakko!</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
