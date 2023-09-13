@@ -1,0 +1,16 @@
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: first baseline;
+    color: #b5beafff;
+    padding: 0.5%;
+    border-bottom: 1px white solid;
+    position: sticky;
+    top: 0;
+}
+
+.header p{
+    margin-left: 2%;
+}
+

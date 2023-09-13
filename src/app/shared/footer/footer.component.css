@@ -1,0 +1,21 @@
+footer{
+    margin: 0;
+    padding: 5%;
+    /* background-color: #343434ff; */
+    width: 100%;
+    color: white;
+}
+
+.footer-2{
+    gap: 10%;
+    line-height: 5vh;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    
+    
+}
+
+.test{
+    flex: 5 30%;
+}

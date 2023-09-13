@@ -1,0 +1,25 @@
+.container{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-card{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 40px;
+}
+.card{
+    width: 80vh;
+    border-radius: 5%;
+    /* background-color: #28282a; */
+    color: white;
+    padding: 0.5%;
+    border: 1px solid white;
+}
+.card p{
+    padding: 10%;
+}

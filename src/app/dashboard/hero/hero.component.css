@@ -1,0 +1,12 @@
+.hero-content{
+    padding: 2%;
+    color: white;
+}
+
+
+.hero-content .main-hero{
+    color: white;
+    font-size: 100px;
+    font-weight: lighter;
+}
+
