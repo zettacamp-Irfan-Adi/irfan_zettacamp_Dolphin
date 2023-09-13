@@ -1,0 +1,30 @@
+<h1>Hello, {{ nameUser }}</h1>  
+<img [src]="locImg" alt="">
+<!-- <button [disabled]="!status" (click)="onCreateStatus()">status</button>
+<p [innerText]="status"></p> -->
+<hr>
+<label for="inputName"></label>
+<input type="text" class="inputName" (input)="onServerName($event)">
+<p>{{ serverName }}</p> 
+<!-- <label for="inputName"></label> -->
+<!-- <input type="text" class="inputName" [(ngModel)]="serverName">
+<p>{{ serverName }}</p><p>{{ statusMessage }}</p> -->
+
+
+<h2>Task List</h2>
+
+<button (click)="toggleCompleted()">
+  {{ showCompleted ? 'Hide Completed' : 'Show Completed' }}
+</button>
+
+<ul>
+  <li *ngFor="let task of tasks">
+    <span [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none'}">
+      <span *ngIf="!task.editing">{{ task.description }}</span>
+      <input [(ngModel)]="task.description" *ngIf="task.editing" />
+    </span>
+    <button (click)="task.completed = !task.completed">Check</button>
+    <button (click)="editTask(task)">Edit</button>
+    <button (click)="submitEdit(task)" *ngIf="task.editing">Submit</button>
+  </li>
+</ul>
