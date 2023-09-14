@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="containerMain">
+    <div class="sideBar">
+        <app-task-sidebar></app-task-sidebar>
+    </div>
+    <div class="taskContainer">
+        <app-task-input [taskList]="taskList" (taskChanged)="handleTaskListChange($event)"></app-task-input>
+        <div class="displayTask">
+            <div class="taskList">
+                    <tr>
+                    <td>Task Name</td>
+                    <td>Description</td>
+                    </tr>
+                <table>
+                    <tr *ngFor="let task of taskList">
+                        <td>{{ task.task }}</td>
+                        <td>{{ task.desc }}</td>
+                        <td>
+                            <button (click)="deleteTask(task)">Delete</button>
+                          </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>

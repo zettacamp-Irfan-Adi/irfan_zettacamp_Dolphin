@@ -1,0 +1,59 @@
+.containerMain {
+    display: flex;
+  }
+  .sideBar{
+    height: 100vh;
+  }
+  .taskContainer {
+    flex: 3; /* Adjust the flex property to control the width */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f8f9fb; /* Background color for the task container */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for a container effect */
+  }
+  
+  .taskList {
+    width: 100%; /* Set the table width to 100% of the parent div */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc; /* Add borders to the table, th, and td elements */
+  }
+  
+  th, td {
+    padding: 8px; /* Add padding to th and td elements for spacing */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Styling for the table header */
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  /* Styling for odd rows */
+  tr:nth-child(odd) {
+    background-color: #e6e6e6;
+  }
+  
+  /* Styling for even rows */
+  tr:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  
+  /* Styling for the table header and cells */
+  th, td {
+    text-align: left;
+  }
+  
+  h2{
+    color: #605cfcff;
+  }
+  
+  
+  
+  
+  

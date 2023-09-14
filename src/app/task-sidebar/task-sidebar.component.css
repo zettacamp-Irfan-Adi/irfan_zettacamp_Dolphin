@@ -1,0 +1,39 @@
+/* Styling for the sidebar container */
+.sidebar {
+    width: 200px; /* Adjust the width as needed */
+    height: 100%; /* Make the sidebar full height */
+    background-color: #333; /* Background color for the sidebar */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for a container effect */
+  }
+  
+  /* Styling for the sidebar heading */
+  .sidebar h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+  
+  /* Styling for sidebar links */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add smooth transition effect */
+  }
+  
+  /* Styling for sidebar links on hover */
+  .sidebar a:hover {
+    background-color: #555; /* Change the background color on hover */
+  }
+  

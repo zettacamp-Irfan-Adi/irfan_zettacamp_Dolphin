@@ -1,0 +1,12 @@
+<div class="taskForm">
+    <h2>Input The Task</h2>
+    <div class="inputForm">
+        <h2>task name :</h2>
+        <input name="inputName" type="text" class="inputName" [(ngModel)]="inputTask">
+        <h2>task Description :</h2>
+        <input name="inputDescription" type="text" class="inputName" [(ngModel)]="inputDesc">
+    </div>
+    <div>
+        <button (click)="onTaskList()" [disabled]="!inputTask">Submit</button>
+    </div>
+</div>
