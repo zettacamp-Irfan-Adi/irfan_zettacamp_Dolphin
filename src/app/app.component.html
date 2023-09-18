@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<div>
+  <h1>Football Transfer App</h1>
+  <button (click)="togglePlayerList()">Show Player List</button>
+  <button (click)="toggleTransferList()">Show Transfer List</button>
+</div>
+
+<app-player-list *ngIf="showPlayerList"></app-player-list>
+<app-transfer-list *ngIf="showTransferList"></app-transfer-list>

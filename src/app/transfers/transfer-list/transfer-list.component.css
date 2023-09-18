@@ -1,0 +1,84 @@
+/* transfers/transfer-list/transfer-list.component.css */
+
+/* Style for the transfer list container */
+.transfer-list {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  /* Style for the transfer list title */
+  .transfer-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style for the transfer list items */
+  .transfer-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transfer-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Style for the player's name */
+  .transfer-list li .player-name {
+    font-weight: bold;
+  }
+  
+  /* Style for the player's status */
+  .transfer-list li .player-status {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Style for the add transfer form */
+  .add-transfer-form {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-transfer-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .add-transfer-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-transfer-form input[type="text"],
+  .add-transfer-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .add-transfer-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-transfer-form button:hover {
+    background-color: #0056b3;
+  }
+  

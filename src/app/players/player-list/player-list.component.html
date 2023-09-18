@@ -1,0 +1,25 @@
+<!-- players/player-list/player-list.component.html -->
+<div class="player-list">
+  <h2>Player List</h2>
+  <ul>
+    <li *ngFor="let player of players">
+      <span class="player-name">{{ player.playerName }}</span> - Status: <span class="player-status">{{ player.status }}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="add-player-form">
+  <h3>Add New Player</h3>
+  <div>
+    <label for="newPlayerName">Player Name:</label>
+    <input type="text" id="newPlayerName" [(ngModel)]="newPlayerName" required>
+  </div>
+  <div>
+    <label for="selectedStatus">Status:</label>
+    <select id="selectedStatus" [(ngModel)]="selectedStatus" required>
+      <option value="" disabled>Select a Status</option>
+      <option *ngFor="let status of availableStatuses" [value]="status">{{ status }}</option>
+    </select>
+  </div>
+  <button (click)="addNewPlayer()">Add Player</button>
+</div>
