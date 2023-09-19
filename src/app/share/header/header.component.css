@@ -1,0 +1,47 @@
+#main-header{
+    background-color: #212123;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    /* z-index: 1; */
+}
+
+#main-header h1{
+    font-size: 25px;
+    color: #9288F8;
+}
+
+#main-header p:hover{
+   color: #A1CCD1;
+}
+
+#main-header input{
+    width:  50  rem;
+    border-radius: 10px;
+    border: 1px solid #bfc9d9;
+    padding: 1%;
+    height: 2.5rem;
+    outline: none;
+}
+#main-header p{
+    font-size: 20px;
+    color: #8f61daff
+}
+#main-header button{
+    width: 4rem;
+    border-radius: 10px;
+    border: 1px solid #00aa5b;
+    height: 33px;
+}
+#input:focus{
+    border: #00aa5b 2px solid;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+}

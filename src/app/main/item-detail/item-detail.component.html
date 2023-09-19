@@ -1,0 +1,19 @@
+<h1>Item detail</h1>
+<div *ngIf="selectedData">
+        <div class="detail-items">
+            <div>
+                <p>nama :{{selectedData.name}}</p>
+                <p>merek :{{ selectedData.brand }}</p>
+                <p>stock :{{ selectedData.stock }}</p>
+                <p>Deskripsi :{{ selectedData.Description }}</p>
+                <p>warna :{{ selectedData.Color }}</p>
+                <p>Harga :{{ selectedData.price }}</p>
+
+            </div>
+        <div class="detail-2">
+            <img [src]="selectedData.inputImg" alt="Item Image">
+            <button (click)="stockService.resetSelectedData()">close</button>
+        </div>
+    
+    </div>
+</div>

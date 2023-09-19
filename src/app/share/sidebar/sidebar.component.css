@@ -1,0 +1,29 @@
+
+
+.button-aside{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    align-self: center;
+   
+}
+.aside-1{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aside-2{
+    margin-top: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.aside-3{
+    padding: 5%;
+    margin-top: 10%;
+}
