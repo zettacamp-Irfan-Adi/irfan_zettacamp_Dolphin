@@ -1,0 +1,36 @@
+/* Default styles for larger screens */
+footer {
+    margin: 0;
+    background-color: #8f61daff;
+    width: 100%;
+    color: white;
+}
+
+.footer-2 {
+    gap: 10%;
+    line-height: 4vh;
+    height: 40vh;
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 3%;
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    footer {
+        text-align: center; /* Center text on smaller screens */
+        gap: 50%;
+    }
+
+    .footer-2 {
+        width: 90vw; /* Adjust the width for smaller screens */
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+        height: auto; /* Allow content to expand vertically as needed */
+    }
+
+    .footer-2 > * {
+        margin-bottom: 10px; /* Add spacing between elements on smaller screens */
+    }
+}

@@ -1,0 +1,17 @@
+<h1>Add the item</h1>
+<div class="add-item">
+    <!-- <form (ngSubmit)="additem()"> -->
+        <input type="text" placeholder="Item Name here" #inputName>
+        <input type="text" placeholder="Item Brand here" #inputBrand>
+        <input type="number" placeholder="Item Stock" #inputStock>
+        <input type="text" placeholder="Item Description" #inputDesc>
+        <label for="selectedColor" style="margin-left: 2%;">Color:</label>
+        <select id="selectedColor" #inputColor>
+          <option value="" disabled>Select a Color</option>
+          <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+        </select>
+        <input type="text" placeholder="Item Price" #inputPrice>
+        <input type="text" placeholder="Place the image" #inputImg>
+        <button (click)="additem(inputName.value,inputBrand.value,inputStock.valueAsNumber,inputDesc.value,inputColor.value,inputPrice.valueAsNumber,inputImg.value)">Add Item</button>
+    <!-- </form> -->
+</div>

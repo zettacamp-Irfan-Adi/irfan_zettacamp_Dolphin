@@ -1,0 +1,15 @@
+<h1>All Item</h1>
+<div class="main-card">
+    <div class="card" *ngFor="let item of itemsData;let i = index">
+        <div class="card-head">
+            <img [src]="item.inputImg" alt="Item Image">
+        </div>
+        <div class="card-body">
+            <p>{{ item.name }}</p>
+            <p>{{ item.brand }}</p>
+            <h4>{{ item.price }}</h4>
+            <a>
+                <button (click)="seeDetail(i)">Detail</button>
+            </a>
+        </div>
+    </div>
