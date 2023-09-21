@@ -1,0 +1,51 @@
+<!-- src/app/card-create/card-create.component.html -->
+
+<div class="card-create">
+  <h2>Add a new car list</h2>
+  <form [formGroup]="carForm" (ngSubmit)="addData()" class="form-horizontal">
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" formControlName="name" required />
+    </div>
+    <div class="form-group">
+      <label>Brand:</label>
+      <input type="text" formControlName="brand" required />
+    </div>
+    <div class="form-group">
+      <label>Stock:</label>
+      <input type="number" formControlName="stock" required />
+    </div>
+    <div class="form-group">
+      <label>Price:</label>
+      <input type="number" formControlName="price" required />
+    </div>
+    <div class="form-group">
+      <label>Year:</label>
+      <input type="number" formControlName="year" required />
+    </div>
+    <div class="form-group">
+      <label>Color:</label>
+      <input type="text" formControlName="color" required />
+    </div>
+    <div class="form-group">
+      <label>img:</label>
+      <input type="text" formControlName="img" required />
+    </div>
+      <h2>Owner Identity :</h2>
+      <div class="form-group owner-group" formGroupName="owner">
+        <label>Full Name:</label>
+        <input type="text" formControlName="name" required />
+      </div>
+      <div class="form-group owner-group" formGroupName="owner">
+        <label>City:</label>
+        <input type="text" formControlName="city" required />
+      </div>
+      <div class="form-group owner-group" formGroupName="owner">
+        <label>Address:</label>
+        <input type="text" formControlName="address" required />
+      </div>
+    <div>
+        <button type="submit">Add</button>
+    </div>
+</form>
+</div>

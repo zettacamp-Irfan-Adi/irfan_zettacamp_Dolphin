@@ -1,0 +1,74 @@
+/* Style the <h1> */
+h1 {
+    color: #333; /* Text color for the heading */
+    font-size: 24px; /* Adjust the font size */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  
+  /* Style the container for item details */
+  .detail-items {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Add space between columns */
+  }
+  
+  /* Style the left column with item details */
+  .detail-items > div:first-child {
+    flex: 1; /* Expand to take available space */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add right margin for spacing */
+    background-color: #fff; /* Background color */
+  }
+  
+  /* Style the right column with the item image */
+  .detail-2 {
+    flex: 1; /* Expand to take available space */
+  }
+  
+  /* Style the item image */
+  .detail-2 img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Style the "Pemilik" section */
+  .detail-items > div:last-child {
+    flex: 1; /* Expand to take available space */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+  }
+  
+  /* Style the "Pemilik" heading */
+  .detail-items > div:last-child h2 {
+    font-size: 20px; /* Adjust the font size */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+  
+  /* Style the "Pemilik" details */
+  .detail-items > div:last-child p {
+    margin: 5px 0; /* Add margin for spacing between details */
+  }
+  
+  /* Add some responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .detail-items {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .detail-items > div:first-child,
+    .detail-items > div:last-child {
+      flex: auto; /* Allow both columns to expand and take full width */
+      margin: 0; /* Remove horizontal margin */
+    }
+  
+    .detail-items > div:first-child {
+      margin-bottom: 20px; /* Add bottom margin for spacing between columns */
+    }
+  }
+  

@@ -1,0 +1,24 @@
+<h1>Item detail</h1>
+
+        <div class="detail-items">
+            <div>
+                <p>nama :{{itemsData.name}}</p>
+                <p>merek :{{ itemsData.brand }}</p>
+                <p>stock :{{ itemsData.stock }}</p>
+                <p>Tahun :{{ itemsData.year }}</p>
+                <p>warna :{{ itemsData.color }}</p>
+                <p>Harga :{{ itemsData.price }}</p>
+
+            </div>
+        <div class="detail-2">
+            <img [src]="itemsData.img" alt="Item Image">
+        </div>
+
+        <div>
+            <h2>Pemilik</h2>
+            <p>{{ itemsData.owner.name }}</p>
+            <p>{{ itemsData.owner.city }}</p>
+            <p>{{ itemsData.owner.address }}</p>
+        </div>
+    
+</div>

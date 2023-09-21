@@ -1,0 +1,11 @@
+*{
+background-color: #64CCC5;
+}
+
+.main-content{
+    display: flex;
+}
+.content{
+    display: flex;
+    width: 100vw;
+}
